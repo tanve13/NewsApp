@@ -29,7 +29,6 @@ fun NewsCard(news: News) {
                 contentDescription = news.title,
                 modifier = Modifier.fillMaxWidth().height(200.dp),
                 contentScale = ContentScale.Crop
-
             )
             Spacer(modifier = Modifier.height(8.dp))
             Text(text = news.title, style = MaterialTheme.typography.titleMedium)
@@ -37,6 +36,5 @@ fun NewsCard(news: News) {
             Text(text = news.content,style = MaterialTheme.typography.bodyMedium)
 
         }
-
     }
 }
