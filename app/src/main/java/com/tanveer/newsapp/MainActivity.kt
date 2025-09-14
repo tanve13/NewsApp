@@ -29,7 +29,6 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             NewsAppTheme {
-                // A surface container using the 'background' color from the theme
                 var darkTheme by remember { mutableStateOf(false) }
                 NewsAppTheme(darkTheme = darkTheme) {
                     Surface(modifier = Modifier.fillMaxSize()) {
